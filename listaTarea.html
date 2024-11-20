@@ -1,17 +1,46 @@
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Tareas</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/bootstrap.js">
+    
+    <title>Registro de Tareas</title>
+
 </head>
 <body>
 <h1>Registro de Tareas</h1>
+<div class="form-container">
+    <label for="taskName">Nombre de la Tarea:</label>
+    <input type="text" id="taskName" placeholder="Ejemplo: Estudiar JS">
 
-<script src="js/bootstrap.js"></script>
+    <label for="taskDate">Fecha:</label>
+    <input type="date" id="taskDate">
+
+    <label for="taskDescription">Descripción:</label>
+    <textarea id="taskDescription" rows="4" placeholder="Descripción de la tarea"></textarea>
+
+    <button id="addTaskButton">Agregar Tarea</button>
+</div>
+
+<div class="table-container">
+    <table>
+    <thead>
+        <tr>
+        <th>Nombre</th>
+        <th>Fecha</th>
+        <th>Descripción</th>
+        <th>Acción</th>
+        </tr>
+    </thead>
+    <tbody id="taskTableBody">
+    </tbody>
+    </table>
+</div>
+
+<script src="js/main.js" src="js/bootstrap.js"></script>
 </body>
 </html>
+
+
